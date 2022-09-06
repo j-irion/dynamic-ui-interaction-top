@@ -1,0 +1,42 @@
+#drop-down-container {
+  outline: 1px black solid;
+  width: 500px;
+  height: 500px;
+}
+
+#drop-down {
+  width: max-content;
+  position: relative;
+  outline: 1px solid black;
+  background-color: red;
+  height: max-content;
+
+}
+
+.drop-down-trigger {
+  background-color: yellow;
+}
+
+.drop-down-list {
+  list-style: none;
+  padding-left: 0;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  width: 100%;
+}
+
+.drop-down-list-element {
+  position:absolute;
+  top: 0;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  opacity: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.drop-down-list-element.active {
+  transform: translateY(18px);
+  opacity: 1;
+  z-index: 2;
+}
