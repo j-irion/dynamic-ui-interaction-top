@@ -29,7 +29,7 @@
 .drop-down-list-element {
   position:absolute;
   top: 0;
-  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out 150ms;
   opacity: 0;
   width: 100%;
   z-index: -1;
